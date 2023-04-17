@@ -1,0 +1,135 @@
+ @import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+body{
+    font-family: 'Macondo', cursive;
+    background-color: #146C94;
+}
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.titulo{
+    color: #000000;
+    font-size: 30px;
+
+}
+
+.subtitulos{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin: 10px;
+}
+input{
+    display: none;
+}
+
+input:checked + label{
+    background-color: #2819fe;
+
+}
+
+.tarjeta, .tarjetasAtaques{
+    display: flex;
+    gap: 10px;
+
+}
+
+.tarjeta-De-Mos{
+    width: 180px; 
+    height: 130px; 
+    background-color: #19A7CE; 
+    padding: 10; 
+    box-sizing: border-box;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F6F1F1;
+}
+
+.tarjeta-De-Mos img{
+    width: 80px;
+}
+
+
+
+#boton-mascota{
+    width: 130px;
+    height: 30px;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: rgb(205, 255, 242);
+    font-family: 'Macondo', cursive;
+    margin-top: 10px;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+}
+
+.boton-de-ataque{
+    background-color: #19A7CE;
+    padding: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: transparent;
+    width: 50px;
+    color: bisque;
+    font-family: 'Macondo', cursive;
+    margin-block: 8px
+}
+
+#mensajes{ 
+    width: 200px;
+    background-color: bisque;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block: 20px
+
+}
+
+#boton-reiniciar{
+    border: none;
+    color:#146C94
+    align-items center;
+    font-family: 'Macondo', cursive;
+}
+
+.ataquesgrid{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    background-color: #abb3fb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.imagen{
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.ataqueJugador, .ataqueEnemigo{
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 360px){
+    .tarjeta, .tarjetasAtaques{
+        flex-direction: column;
+    }
+
+
+}

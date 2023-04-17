@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<thml>
+    <head>
+            <meta charset="uft-8"/>
+             <title>MOKEPON</title>
+             <script src="./js/mos.js"></script>
+             <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+    <body>
+            <section id="seleccionar-mascota">
+                <h2 class="titulo">MOKEPON</h2>
+
+                <h2 class="subtitulos"> eligue a tu mascota:</h2>
+
+                <div class="tarjeta">
+                
+                <input type="radio" name="mascota" id="Mamawuevo"/>
+                <label class="tarjeta-De-Mos" for="Mamawuevo">
+                    <p>Mamawuevo</p>
+                    <img src="./imajen/mamawuevo02.png" alt="Mamawuevo" >
+                </label>
+
+                
+                <input type="radio" name="mascota" id="Baracaton"/>
+                <label class="tarjeta-De-Mos" for="Baracaton">
+                    <p>Baracaton</p>
+                    <img src="./imajen/baracaton.jpg" alt="Mamawuevo" >
+                </label>
+
+                <input type="radio" name="mascota" id="Saimon"/>
+                <label class="tarjeta-De-Mos" for="Saimon">
+                    <p>Saimon</p>
+                    <img src="./imajen/saimon02.png" alt="Saimon" >
+                </label>
+                </div>
+                
+                <button id="boton-mascota">seleccionar</button>
+                    
+                
+            </section>
+
+                    
+            <section id="seleccionar-ataque">
+                <h2 class="titulo">MOKEPON</h2>
+
+                <h3>ELEMENTOS</h3>
+
+                <div class="imagen">
+                    <img src="./imajen/elementos.jpg" style="width: 100px;">
+                </div>
+
+                 <div class="ataquesgrid">
+                    <div class="ataqueJugador">
+                        <p >vidas de tu mascota</p>
+                        <p id="vidas-jugador">3</p> 
+                        <p id="jugador"></p>
+                        <div id="ataques-Del-Jugador"></div>
+                
+                       
+                    </div>
+                    
+                    <div class="ataqueEnemigo">
+                        <p >vidas de tu enemigo </p>
+                        <p id="vidas-enemigo">3</p> 
+                        <p id="enemigo-enemigo"></p>
+                        <div id="ataques-Del-Enemigo"></div>
+                    </div>
+                </div>
+                    <h3 class="subtitulos"> eligue tu ataque:</h3>
+                <div class="tarjetasAtaques">
+                    <button id="boton-fuego" class="boton-de-ataque"> Fuego </button>
+                    <button id="boton-agua" class="boton-de-ataque"> Agua </button>
+                    <button id="boton-tierra" class="boton-de-ataque"> Tierra </button>
+                </div>
+
+                <div  id="mensajes">
+                    <p id="resultado">mucha suerte</p>
+                    <section id="reiniciar">
+                        <button id="boton-reiniciar">jugar de nuevo</button>
+                    </section>
+                </div>
+                
+            </section>
+    </body>
+    </html>
